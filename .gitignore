@@ -1,0 +1,16 @@
+
+/.idea
+/.vscode
+
+/node_modules
+
+/logs
+*.log
+
+/dist
+/cache
+/release
+
+/coverage
+
+/typings

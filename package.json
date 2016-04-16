@@ -1,0 +1,28 @@
+{
+  "name": "angular2-starter",
+  "version": "1.0.0",
+  "description": "Starter kit using Angular 2, Typescript, Webpack",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbazos/angular2-starter.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "starter",
+    "boilerplate",
+    "kit",
+    "webpack",
+    "typescript",
+    "material"
+  ],
+  "author": "Michael Bazos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelbazos/angular2-starter/issues"
+  },
+  "homepage": "https://github.com/michaelbazos/angular2-starter#readme"
+}
