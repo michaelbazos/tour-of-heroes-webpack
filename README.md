@@ -15,3 +15,7 @@ npm start
 ```
 
 The application is served at [http://localhost:3000](http://localhost:3000) in watch mode.
+
+## License
+
+[MIT](/LICENSE)
