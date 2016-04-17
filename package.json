@@ -3,26 +3,42 @@
   "version": "1.0.0",
   "description": "Starter kit using Angular 2, Typescript, Webpack",
   "scripts": {
+    "postinstall": "typings install",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --display-cached --display-error-details --watch",
+    "start": "npm run server:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michaelbazos/angular2-starter.git"
   },
-  "keywords": [
-    "angular",
-    "angular2",
-    "starter",
-    "boilerplate",
-    "kit",
-    "webpack",
-    "typescript",
-    "material"
-  ],
   "author": "Michael Bazos",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelbazos/angular2-starter/issues"
   },
-  "homepage": "https://github.com/michaelbazos/angular2-starter#readme"
+  "homepage": "https://github.com/michaelbazos/angular2-starter#readme",
+  "dependencies": {
+    "angular2": "2.0.0-beta.15",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "awesome-typescript-loader": "^0.17.0-rc.6",
+    "copy-webpack-plugin": "^2.1.1",
+    "html-webpack-plugin": "^2.15.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.2.0",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "typings": "^0.7.12",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
