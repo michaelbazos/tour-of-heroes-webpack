@@ -1,6 +1,6 @@
 {
   "name": "angular2-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starter kit using Angular 2, Typescript, Webpack",
   "scripts": {
     "postinstall": "typings install",
