@@ -1,4 +1,14 @@
-# angular2-starter
+# Angular2 starter kit with webpack
+
+## Features
+
+- Angular 2
+- Typescript
+- Webpack
+- Live reload
+- Angular router
+
+This starter kit uses the **[official Tour of Heroes tutorial](https://angular.io/docs/ts/latest/tutorial/)**
 
 ## Requirements
 
