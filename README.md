@@ -8,7 +8,11 @@
 - Live reload
 - Angular router
 
-This starter kit uses the **[official Tour of Heroes tutorial](https://angular.io/docs/ts/latest/tutorial/)**
+This starter kit features the **[official Tour of Heroes tutorial](https://angular.io/docs/ts/latest/tutorial/)**
+
+## Demo
+
+![](/docs/demo.gif)
 
 ## Requirements
 
