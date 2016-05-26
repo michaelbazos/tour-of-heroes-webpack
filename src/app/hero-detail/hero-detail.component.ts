@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from 'angular2/core';
-import {RouteParams} from 'angular2/router';
+import {Component, Input, OnInit} from '@angular/core';
+import {RouteParams} from '@angular/router-deprecated';
 
 import {Hero} from '../hero/hero.model';
 import {HeroService} from '../hero/hero.service';
