@@ -2,7 +2,6 @@ const helpers = require('./helpers');
 
 const webpack = require('webpack');
 
-const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const ENV = {
@@ -51,7 +50,7 @@ module.exports = {
       { test: /\.js$/, loader: 'source-map', exclude: [ helpers.getPath('node_modules/rxjs') ] }
     ],
     loaders: [
-      { test: /\.ts$/, loader: 'awesome-typescript' },
+      { test: /\.ts$/, loader: 'ts' },
 
       { test: /\.css$/,   loader: 'raw' },
 
@@ -65,7 +64,6 @@ module.exports = {
   },
 
   plugins: [
-    new ForkCheckerPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.CommonsChunkPlugin({ name: ['main', 'polyfills'] }),
 

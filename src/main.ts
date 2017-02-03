@@ -1,10 +1,5 @@
-import {bootstrap} from '@angular/platform-browser-dynamic';
-import {ROUTER_PROVIDERS} from '@angular/router';
-import {HeroService} from './app/hero/hero.service';
-import {AppComponent} from './app/app.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-bootstrap(AppComponent, [
-  ROUTER_PROVIDERS,
-  HeroService
-]);
+import { AppModule } from './app/app.module';
 
+platformBrowserDynamic().bootstrapModule(AppModule);

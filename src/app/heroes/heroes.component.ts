@@ -1,33 +1,57 @@
-import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router-deprecated';
-import {HeroService} from '../hero/hero.service';
-import {HeroDetailComponent} from '../hero-detail/hero-detail.component';
-import {Hero} from '../hero/hero.model';
+import { Component, OnInit } from '@angular/core';
+import { Router }            from '@angular/router';
+
+import { Hero }         from '../hero/hero.model';
+import { HeroService }  from '../hero/hero.service';
 
 @Component({
   selector: 'my-heroes',
   templateUrl: 'app/heroes/heroes.component.html',
-  styleUrls: ['app/heroes/heroes.component.css'],
-  directives: [HeroDetailComponent]
+  styleUrls: ['app/heroes/heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
 
-  constructor(private _heroService: HeroService, private _router: Router) { }
+  constructor(
+    private heroService: HeroService,
+    private router: Router) { }
 
-  getHeroes() {
-    this._heroService.getHeroes()
+  getHeroes(): void {
+    this.heroService
+      .getHeroes()
       .then(heroes => this.heroes = heroes);
   }
 
-  gotoDetail() {
-    this._router.navigate(['HeroDetail', { id: this.selectedHero.id }]);
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.heroService.create(name)
+      .then(hero => {
+        this.heroes.push(hero);
+        this.selectedHero = null;
+      });
   }
 
-  ngOnInit() {
+  delete(hero: Hero): void {
+    this.heroService
+      .delete(hero.id)
+      .then(() => {
+        this.heroes = this.heroes.filter(h => h !== hero);
+        if (this.selectedHero === hero) { this.selectedHero = null; }
+      });
+  }
+
+  ngOnInit(): void {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero) { this.selectedHero = hero; }
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
+
+  gotoDetail(): void {
+    this.router.navigate(['/detail', this.selectedHero.id]);
+  }
 }
+

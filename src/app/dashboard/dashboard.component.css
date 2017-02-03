@@ -1,5 +1,13 @@
 [class*='col-'] {
   float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -9,12 +17,8 @@
 h3 {
   text-align: center; margin-bottom: 0;
 }
-[class*='col-'] {
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-[class*='col-']:last-of-type {
-  padding-right: 0;
+h4 {
+  position: relative;
 }
 .grid {
   margin: 0;
@@ -30,9 +34,6 @@ h3 {
   min-width: 120px;
   background-color: #607D8B;
   border-radius: 2px;
-}
-h4 {
-  position: relative;
 }
 .module:hover {
   background-color: #EEE;
