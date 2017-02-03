@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+
 import {HeroesComponent} from './heroes/heroes.component';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {DashboardComponent} from './dashboard/dashboard.component';

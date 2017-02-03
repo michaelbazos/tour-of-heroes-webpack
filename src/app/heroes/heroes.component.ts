@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router-deprecated';
+import {Router} from '@angular/router';
 import {HeroService} from '../hero/hero.service';
 import {HeroDetailComponent} from '../hero-detail/hero-detail.component';
 import {Hero} from '../hero/hero.model';
