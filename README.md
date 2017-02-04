@@ -1,4 +1,7 @@
-# Angular2 starter kit with webpack
+## Description
+
+Angular 2 starter kit featuring the official Tour of Heroes tutorial ([link](https://angular.io/docs/ts/latest/tutorial/)) and Webpack.
+Up to date with **Angular 2.4.x** and TypeScript 2.
 
 ## Requirements
 
@@ -7,9 +10,11 @@
 ## Getting started
 
 ```bash
-git clone https://github.com/michaelbazos/angular2-starter.git && cd angular2-starter
+git clone https://github.com/michaelbazos/angular2-starter.git
 
-npm i
+cd angular2-starter
+
+npm install
 
 npm start
 ```
@@ -21,12 +26,8 @@ The application is served at [http://localhost:3000](http://localhost:3000) in w
 - Angular 2
 - Angular router
 - Typescript
-- Typings
 - Webpack
 - Live reload
-
-
-This starter kit features the **[official Tour of Heroes tutorial](https://angular.io/docs/ts/latest/tutorial/)**
 
 ## Demo
 
