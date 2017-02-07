@@ -33,6 +33,7 @@
     "zone.js": "^0.7.5"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.35",
     "autoprefixer": "^6.6.1",
     "copy-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^2.26.0",
