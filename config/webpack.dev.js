@@ -50,7 +50,7 @@ module.exports = {
       { test: /\.js$/, loader: 'source-map', exclude: [ helpers.getPath('node_modules/rxjs') ] }
     ],
     loaders: [
-      { test: /\.ts$/, loader: 'ts' },
+      { test: /\.ts$/, loader: 'angular2-template!ts' },
 
       { test: /\.css$/,   loader: 'raw' },
 
