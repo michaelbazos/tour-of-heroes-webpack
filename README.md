@@ -26,7 +26,7 @@ The application is served at [http://localhost:3000](http://localhost:3000) in w
 - Angular 2
 - Angular router
 - Typescript
-- Webpack
+- Webpack 2
 - Live reload
 
 ## Demo
