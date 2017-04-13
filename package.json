@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Starter kit using Angular 2, Typescript, Webpack",
   "scripts": {
-    "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --display-cached --display-error-details --watch",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --watch",
     "start": "npm run server:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -47,7 +47,7 @@
     "style-loader": "^0.13.1",
     "ts-loader": "^2.0.0",
     "typescript": "^2.1.5",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }
