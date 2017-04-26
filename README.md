@@ -3,6 +3,10 @@
 Angular 2 starter kit featuring the official Tour of Heroes tutorial ([link](https://angular.io/docs/ts/latest/tutorial/)) and Webpack.
 Up to date with **Angular 4.x** and TypeScript 2.
 
+## Demo
+
+![](/docs/demo.gif)
+
 ## Requirements
 
 * [Node.js](http://nodejs.org/) >= 4.x
@@ -28,10 +32,6 @@ The application is served at [http://localhost:3000](http://localhost:3000) in w
 - Typescript
 - Webpack 2
 - Live Reload
-
-## Demo
-
-![](/docs/demo.gif)
 
 ## License
 
