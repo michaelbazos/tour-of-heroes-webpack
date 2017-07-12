@@ -28,11 +28,7 @@ module.exports = {
    * @see http://webpack.github.io/docs/configuration.html#resolve
    */
   resolve: {
-    extensions: ['.ts', '.js', '.json'],
-    modules: [
-      path.resolve('src'),
-      path.resolve('node_modules')
-    ]
+    extensions: ['.ts', '.js', '.json']
   },
 
   /**
@@ -51,7 +47,7 @@ module.exports = {
         test: /\.js$/,
         use: ['source-map-loader'],
         enforce: 'pre',
-        exclude: [path.resolve('node_modules/rxjs')] 
+        exclude: [path.resolve('node_modules/rxjs')]
       },
       {
         test: /\.ts$/,
